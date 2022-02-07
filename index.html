@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Daniel Bulla</title>
+		<script type="text/javascript" src="encryption.js"></script>
+		<script type="text/javascript" src="pattern.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="buildbusinesscard.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="css/flag-icons.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body onload="pattern(document.getElementById('eyecandy'))">
+		<div id="businesscard">
+			<span id="name">
+				<span id="firstname" class="leaf">
+					Daniel
+				</span>
+				<span id="lastname" class="leaf">
+					Bulla
+				</span>
+			</span>
+			<div id="information">
+			    <p class="leaf">
+					<i class="fas fa-user-tie myicon"></i>
+				    <span>Software Engineer, C++17, Qt, OpenGL</span>
+				</p>
+			    <p class="leaf">
+					<i class="fas fa-map-marker-alt myicon"></i>
+				    <span id="address">Widnau, St. Gallen, Schweiz</span>
+				</p>
+				<p class="leaf">
+				    <i class="fas fa-envelope myicon"></i>
+				    <span id="email"></span>
+				</p>
+				<p id="telephones">
+					<div class="leaf">
+					    <!--i class="fas fa-phone myicon"></i-->
+						<span class="fi fi-de myflag"></span>
+						<i class="fab fa-whatsapp"></i>
+					    <span id="telephoneDE"></span>
+					</div>
+					<div class="leaf">
+					    <!--i class="fas fa-phone myicon"></i-->
+						<span class="fi fi-ch myflag"></span>
+						<i class="fab fa-whatsapp hideme"></i>
+					    <span id="telephoneCH"></span>
+					</div>
+				</p>
+			</div>
+			<div id="social" style="font-size: 2em">
+			<a href="https://github.com/dabulla" class="leaf"><i class="fab fa-github"></i></a>
+			<a href="https://linkedin.com/in/dabulla" class="leaf"><i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+		<span id="futher" class="leaf">
+			<a href="https://dabulla.github.io/HeatmapCompositor/">heatmap compositor</a> |
+			<a href="https://dabulla.github.io/names-list/">names list</a> |
+			<a href="physicsgame/">physicsgame</a>
+		</span>
+		<canvas id="eyecandy">
+		</canvas>
+    </body>
+</html>
