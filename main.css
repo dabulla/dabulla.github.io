@@ -12,6 +12,7 @@ body {
 
 body.darkmode {
 	background-color: #050505;
+	color: #777777;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 }
 
 a.darkmode {
-	color: #333333;
+	color: #777777;
 }
 
 a:hover {
@@ -28,7 +29,7 @@ a:hover {
 }
 
 a.darkmode:hover {
-	color: #888888;
+	color: #999999;
 }
 
 #darkmode-button {
@@ -36,18 +37,29 @@ a.darkmode:hover {
 	right: 1em;
 	top: 1em;
 	font-size: 2em;
+	cursor: pointer;
 }
 
 #darkmode-button:before {
 	content: '\f186';
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	color: #333333;
 }
 
 #darkmode-button.darkmode:before {
 	content: '\f185';
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	color: #666666;
+}
+
+#darkmode-button:hover::before {
+	color: #999999;
+}
+
+#darkmode-button.darkmode:hover::before {
+	color: #999999;
 }
 
 #businesscard {
@@ -76,7 +88,7 @@ a.darkmode:hover {
 }
 
 #firstname.darkmode {
-	color: #333333;
+	color: #444444;
 	font-weight: bolder;
 }
 
@@ -109,16 +121,12 @@ a.darkmode:hover {
 	padding-top: 1em;
 }
 
-#telephone:before {
-	content:"Tel.: ";
-}
-
 #futher {
 	position: absolute;
 	top: 80%;
 	width: 100%;
 	text-align: center;
-	opacity: 90%;
+	opacity: 60%;
 	z-index: 10;
 }
 
