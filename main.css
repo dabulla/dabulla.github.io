@@ -2,13 +2,6 @@
     Document   : main
     Created on : 17.06.2011, 20:56:34
     Author     : Xz2
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
-/* 
-   TODO customize this sample style
-   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
 
 body {
@@ -17,12 +10,44 @@ body {
 	color: #666666;
 }
 
+body.darkmode {
+	background-color: #050505;
+}
+
 a {
 	color: #666666;
 	text-decoration: none;
 }
+
+a.darkmode {
+	color: #333333;
+}
+
 a:hover {
 	color: #333333;
+}
+
+a.darkmode:hover {
+	color: #888888;
+}
+
+#darkmode-button {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	font-size: 2em;
+}
+
+#darkmode-button:before {
+	content: '\f186';
+	font-family: "Font Awesome 5 Free";
+	color: #333333;
+}
+
+#darkmode-button.darkmode:before {
+	content: '\f185';
+	font-family: "Font Awesome 5 Free";
+	color: #666666;
 }
 
 #businesscard {
@@ -35,35 +60,55 @@ a:hover {
 
 	z-index: 10;
 }
+
 #name {
 	font-size: 34pt;
-
 }
+
 #firstname:before {
 	content: "";
 	font-weight: bolder;
 }
-#firstname {
 
+#firstname {
 	color: #666666;
 	font-weight: bolder;
 }
+
+#firstname.darkmode {
+	color: #333333;
+	font-weight: bolder;
+}
+
 #lastname {
 	color: #333333;
 }
+
+#lastname.darkmode {
+	color: #666666;
+}
+
 #information {
 	position: relative;
 	left: 50%;
 	margin-left: -60pt;
-	padding-left: 5px;
+	padding-left: 10px;
 	text-align: left;
-	border-left: #dddddd;
+	border-left: #666666;
 	border-left-width: 1px;
 	border-left-style: solid;
 }
+
+#information.darkmode {
+	border-left: #333333;
+	border-left-width: 1px;
+	border-left-style: solid;
+}
+
 #email {
 	padding-top: 1em;
 }
+
 #telephone:before {
 	content:"Tel.: ";
 }
@@ -73,8 +118,12 @@ a:hover {
 	top: 80%;
 	width: 100%;
 	text-align: center;
-	opacity: 50%;
+	opacity: 90%;
 	z-index: 10;
+}
+
+#social {
+	font-size: 2em;
 }
 
 .hideme {

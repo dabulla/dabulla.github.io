@@ -11,7 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="css/flag-icons.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
-    <body onload="pattern(document.getElementById('eyecandy'))">
+    <body onload="pattern(document.getElementById('eyecandy')); $('*').toggleClass('darkmode')">
+		<a onclick="$('*').toggleClass('darkmode')" id="darkmode-button"></a>
 		<div id="businesscard">
 			<span id="name">
 				<span id="firstname" class="leaf">
@@ -49,7 +50,7 @@
 					</div>
 				</p>
 			</div>
-			<div id="social" style="font-size: 2em">
+			<div id="social">
 			<a href="https://github.com/dabulla" class="leaf"><i class="fab fa-github"></i></a>
 			<a href="https://linkedin.com/in/dabulla" class="leaf"><i class="fab fa-linkedin"></i></a>
 			</div>
